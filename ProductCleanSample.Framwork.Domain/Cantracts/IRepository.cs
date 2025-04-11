@@ -1,6 +1,8 @@
-﻿using System;
+﻿using ProductCleanSample.Framwork.Domain.Cantracts.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,5 +17,9 @@ namespace ProductCleanSample.Framwork.Domain.Cantracts
         Task UpdateAsync(TEntity entity);
         Task DeleteAsync(TEntity entity);
         Task<TEntity?> GetByIdAsync(TId id);
+
+        //? Internal Using (Domain)
+        Task<IReadOnlyList<TEntity>> FindAsync(Expression<Func<TEntity, bool>> predicate);
+        Task<PagedList<TEntity>> SearchAsync(SearchData data);
     }
 }
