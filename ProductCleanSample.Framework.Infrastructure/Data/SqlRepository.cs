@@ -43,6 +43,11 @@ namespace ProductCleanSample.Framework.Infrastructure.Data
             await context.SaveChangesAsync();
         }
 
+        public async Task DeleteAsync2(TEntity entity)
+        {
+            entities.Remove(entity);
+            await context.SaveChangesAsync();
+        }
 
         //? Public Search (Reflection)
         public Task<PagedList<TEntity>> SearchAsync(SearchData data)

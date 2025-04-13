@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster " Version="7.4.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\ProductCleanSample.Catalog.Domain\ProductCleanSample.Catalog.Domain.csproj" />
+    <ProjectReference Include="..\ProductCleanSample.Framwork.Application\ProductCleanSample.Framwork.Application.csproj" />
+    <ProjectReference Include="..\ProductCleanSample.Framwork.Domain\ProductCleanSample.Framwork.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
