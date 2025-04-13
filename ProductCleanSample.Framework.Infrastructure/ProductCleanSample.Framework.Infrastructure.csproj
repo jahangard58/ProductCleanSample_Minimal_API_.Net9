@@ -7,16 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.DynamicLinq" Version="9.6.0.2" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.4" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ProductCleanSample.Framwork.Application\ProductCleanSample.Framwork.Application.csproj" />
     <ProjectReference Include="..\ProductCleanSample.Framwork.Domain\ProductCleanSample.Framwork.Domain.csproj" />
   </ItemGroup>
 
