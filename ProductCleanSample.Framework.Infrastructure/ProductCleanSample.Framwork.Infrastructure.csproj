@@ -14,7 +14,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProductCleanSample.Framwork.Application\ProductCleanSample.Framwork.Application.csproj" />
-    <ProjectReference Include="..\ProductCleanSample.Framwork.Domain\ProductCleanSample.Framwork.Domain.csproj" />
   </ItemGroup>
 
 </Project>
