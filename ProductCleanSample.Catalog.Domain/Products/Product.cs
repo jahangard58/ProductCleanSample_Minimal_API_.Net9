@@ -2,8 +2,10 @@
 
 namespace ProductCleanSample.Catalog.Domain.Products
 {
+   
     public class Product : Entity<Guid>
     {
+       
         public Product(Guid id) : base(id) { }
 
         // 'private set'   vaghti yek proprty darim ke ehtamalan Taghirat(Rename) dare
@@ -11,7 +13,7 @@ namespace ProductCleanSample.Catalog.Domain.Products
         public decimal Price { get; private set; }
         public string? Description { get; set; }
 
-
+        
         public static Result<Product> Create(
                                     Guid productId,
                                     string name,
