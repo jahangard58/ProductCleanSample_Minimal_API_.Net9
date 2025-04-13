@@ -1,5 +1,8 @@
 ﻿namespace ProductCleanSample.Framwork.Domain
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Result
     {
         public bool IsSuccess { get; }

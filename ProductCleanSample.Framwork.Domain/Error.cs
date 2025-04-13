@@ -1,5 +1,8 @@
 ﻿namespace ProductCleanSample.Framwork.Domain
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Error
     {
         public static readonly Error None = new(string.Empty, string.Empty, ErrorType.Failure);

@@ -10,6 +10,13 @@ namespace ProductCleanSample.Framework.Infrastructure.Data
     // PM> NuGet\Install-Package Microsoft.EntityFrameworkCore.DynamicLinq -Version 9.6.0.2   
     public static class DbSetExtensions
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TEntity"></typeparam>
+        /// <param name="query"></param>
+        /// <param name="sort"></param>
+        /// <returns></returns>
         public static IQueryable<TEntity> Sort<TEntity>(this IQueryable<TEntity> query, string? sort)
         {
             if (string.IsNullOrEmpty(sort))
@@ -32,6 +39,14 @@ namespace ProductCleanSample.Framework.Infrastructure.Data
         //     return result;
         // }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TEntity"></typeparam>
+        /// <param name="query"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="pageIndex"></param>
+        /// <returns></returns>
         public static async Task<PagedList<TEntity>> PaginateAsync<TEntity>(
         this IQueryable<TEntity> query,
         int pageSize,

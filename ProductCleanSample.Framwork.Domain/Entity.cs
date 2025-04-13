@@ -2,6 +2,10 @@
 
 namespace ProductCleanSample.Framwork.Domain
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="TId"></typeparam>
     public abstract class Entity<TId>: IEntity<TId>
         where TId : notnull
     {

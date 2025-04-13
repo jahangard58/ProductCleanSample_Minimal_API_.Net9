@@ -4,6 +4,12 @@ using System.Linq.Expressions;
 namespace ProductCleanSample.Framwork.Domain.Cantracts
 {
     //2
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
+    /// <typeparam name="TId"></typeparam>
     public interface IRepository<TEntity, TId> 
            where TEntity : IEntity<TId>
            where TId : notnull

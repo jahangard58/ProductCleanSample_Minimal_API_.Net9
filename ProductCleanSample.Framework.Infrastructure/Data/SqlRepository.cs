@@ -6,6 +6,11 @@ using System.Linq.Expressions;
 
 namespace ProductCleanSample.Framework.Infrastructure.Data
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
+    /// <typeparam name="TId"></typeparam>
     public abstract class SqlRepository<TEntity,TId> : IRepository<TEntity, TId>
         where TEntity : Entity<TId>
         where TId : notnull
