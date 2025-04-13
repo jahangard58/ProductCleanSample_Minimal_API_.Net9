@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProductCleanSample.Framwork.Domain.Cantracts.Data
+﻿namespace ProductCleanSample.Framwork.Domain.Cantracts.Data
 {
     public class PagedList<TEntity>(IEnumerable<TEntity> entities,int totalRecordCount)
     {
