@@ -20,9 +20,9 @@ namespace ProductCleanSample.Catalog.Presentation.Products
             public DeleteProductValidator()
             {
                 RuleFor(m => m.ProductId)
-                    .NotEmpty()
+                    .NotNull()
                     .WithMessage("! کالا یافت نشد");
-                 
+
             }
         }
 
