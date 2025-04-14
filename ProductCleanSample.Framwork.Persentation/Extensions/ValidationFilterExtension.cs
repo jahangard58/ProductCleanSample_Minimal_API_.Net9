@@ -11,7 +11,7 @@ namespace ProductCleanSample.Framwork.Persentation.Extensions
         /// <typeparam name="TRequest"></typeparam>
         /// <param name="builder"></param>
         /// <returns></returns>
-        public static RouteHandlerBuilder AddValidationFilter<TRequest>(this RouteHandlerBuilder builder)
+        public static RouteHandlerBuilder Validate<TRequest>(this RouteHandlerBuilder builder)
         {
             builder.AddEndpointFilter<EndpointValidationFilter<TRequest>>();
             return builder;
