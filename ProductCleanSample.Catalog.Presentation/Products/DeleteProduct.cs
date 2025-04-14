@@ -40,10 +40,9 @@ namespace ProductCleanSample.Catalog.Presentation.Products
         }
 
         public static async Task<IResult> DeleteProductHandler(
-        [FromRoute] Guid productId,
-        [FromBody] DeleteProductRequest request,
-        [FromServices] IProductManager manager
-    )
+                                            [FromRoute] Guid productId,
+                                            [FromBody] DeleteProductRequest request,
+                                            [FromServices] IProductManager manager)
         {
             var dto = request.Adapt<ProductDto>() with { ProductId = productId };
 
