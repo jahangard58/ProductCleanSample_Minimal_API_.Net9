@@ -6,6 +6,10 @@ namespace ProductCleanSample.Catalog.Infrastructure.Data
 {
     //Install Pakage ---> PM> NuGet\Install-Package Microsoft.EntityFrameworkCore.Design -Version 9.0.4
     //Install Pakage ---> PM> NuGet\Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 9.0.4
+    //Install Tool ----> PM> dotnet tool update --global dotnet-ef
+    // 'Version .Net' ----> PM> dotnet --version
+    // 'Version EFTools' ----> PM> dotnet ef --version
+
 
     /// <summary>
     /// 
