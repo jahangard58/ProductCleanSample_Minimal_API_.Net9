@@ -19,5 +19,5 @@ await app.RunAsync();
 /// PM> dotnet ef dbcontext list -s ProductCleanSample.Web   //list Context ha ra namayesh midahad
 /// PM> dotnet ef Migrations add InitRun -s ProductCleanSample.Web     // -s yani stratUp Project set mishavad
 /// PM> dotnet ef database update -s ProductCleanSample.Web           
-/// </summary>
+/// </summary> *Run Project And https://localhost:7032/scalar/*
 
