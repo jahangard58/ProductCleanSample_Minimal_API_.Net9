@@ -4,6 +4,8 @@ using System.Linq.Dynamic.Core;
 
 namespace ProductCleanSample.Framework.Infrastructure.Data
 {
+    // CLI Trminal=> dotnet add package Microsoft.EntityFrameworkCore --version 9.4
+    ////PM> NuGet\Install-Package Microsoft.EntityFrameworkCore -Version 9.4
     // PM> dotnet dev-certs https --trust
     // Install Pakage   ---> Microsoft.EntityFrameworkCore 9.4
     // Install Pakage---> Microsoft.Extensions.Logging 9.4
