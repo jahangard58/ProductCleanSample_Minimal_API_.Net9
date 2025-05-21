@@ -44,7 +44,7 @@ namespace ProductCleanSample.Catalog.Presentation.Products
                                             [FromBody] DeleteProductRequest request,
                                             [FromServices] IProductManager manager)
         {
-            var dto = request.Adapt<ProductDto>() with { ProductId = productId };
+            var dto = request.Adapt<ProductDto>() with { Id = productId };
 
             var deleteProductResult = await manager.DeleteProductAsync2(dto);
 

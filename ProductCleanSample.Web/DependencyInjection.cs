@@ -29,6 +29,21 @@ namespace ProductCleanSample.Web
             services.AddCatalogInfrastructure(configuration);
             services.AddExceptionHandler<GlobalExceptionHandler>();
             services.AddProblemDetails();
+            services.AddCors(setup=> 
+            {
+                setup.AddDefaultPolicy(policy =>
+                {
+                    //Environment Develop   USE  ==> any Allow
+                    policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+
+
+
+                    //Environment Production   USE===>  With
+                    // URL Front Application
+                    //policy.WithOrigins("http://localhost:4536/").WithMethods("GET","POST","PUT");
+
+                });
+            });
 
             return services;
         }
@@ -53,7 +68,10 @@ namespace ProductCleanSample.Web
             //    app.UseHsts();
             //}
 
+
             app.MapEndpoints();
+
+            app.UseCors();
 
             return app;
 

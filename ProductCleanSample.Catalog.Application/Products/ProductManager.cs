@@ -40,13 +40,13 @@ namespace ProductCleanSample.Catalog.Application.Products
         public async Task<Result> DeleteProductAsync(ProductDto dto)
         {
             //throw new NotImplementedException();
-            var product = await productRepository.GetByIdAsync(dto.ProductId);
+            var product = await productRepository.GetByIdAsync(dto.Id);
             if (product is null)
             {
                 Result.Failure<GetProductDto>(
                     Error.NotFound(
                         "ProductManager:DeleteProductAsync",
-                        $"Product with identifier {dto.ProductId} not found"
+                        $"Product with identifier {dto.Id} not found"
                     )
                 );
             }
@@ -60,13 +60,13 @@ namespace ProductCleanSample.Catalog.Application.Products
         public async Task<Result> DeleteProductAsync2(ProductDto dto)
         {
             //throw new NotImplementedException();
-            var product = await productRepository.GetByIdAsync(dto.ProductId);
+            var product = await productRepository.GetByIdAsync(dto.Id);
             if (product is null)
             {
                 Result.Failure<GetProductDto>(
                     Error.NotFound(
                         "ProductManager:DeleteProductAsync2",
-                        $"Product with identifier {dto.ProductId} not found"
+                        $"Product with identifier {dto.Id} not found"
                     )
                 );
             }
